@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, seed
 
 from map_objects.rectangle import Rect
 from map_objects.tile import Tile
@@ -16,6 +16,7 @@ class GameMap:
         return tiles
 
     def make_map(self, max_rooms, room_min_size, room_max_size, map_width, map_height, player):
+        # seed(1)
         rooms = []
         num_rooms = 0
         for r in range(max_rooms):
