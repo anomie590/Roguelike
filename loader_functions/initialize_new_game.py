@@ -11,7 +11,6 @@ from game_states import GameStates
 from render_functions import RenderOrder
 
 
-
 def get_constants():
     window_title = 'Roguelike'
 

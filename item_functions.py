@@ -96,7 +96,7 @@ def cast_confuse(*args, **kwargs):
             results.append({'consumed': True, 'message': Message('The eyes of the {0} look vacant, as he starts to stumble around!'.format(entity.name), libtcod.light_green)})
 
             break
-        else:
-            results.append({'consumed': False, 'message': Message('There is no targetable enemy at that location', libtcod.yellow)})
+    else:
+        results.append({'consumed': False, 'message': Message('There is no targetable enemy at that location', libtcod.yellow)})
 
     return results
