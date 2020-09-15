@@ -86,6 +86,9 @@ class Entity:
         # free memory
         libtcod.path_delete(my_path)
 
+    def distance(self, x, y):
+        return math.sqrt((self.x - x)**2 + (self.y - y)**2)
+
     def distance_to(self, other):
         dx = other.x - self.x
         dy = other.y - self.y
