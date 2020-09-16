@@ -3,7 +3,7 @@ from random import randint
 
 def from_dungeon_level(table, dungeon_level):
     for (value, level) in reversed(table):
-        if dungeon_level > level:
+        if dungeon_level >= level:
             return value
     return 0
 
